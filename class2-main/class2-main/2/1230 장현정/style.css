@@ -1,0 +1,285 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 1800px;
+  margin: 0 auto;
+}
+
+#bar {
+  background-color: lightgray;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#bar2 {
+  background-color: gray;
+}
+
+.container {
+  width: 1070px;
+  margin: 0 auto;
+  background-color: lightgray;
+}
+
+#bar2 .container {
+  padding: 10px 10px 0 10px;
+  display: flex;
+  margin-top: 10px;
+  box-sizing: border-box;
+  background-color: lightgray;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.clearfix {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* header */
+header .container .header_gnb {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header .container .header_gnb ul {
+  display: flex;
+  background-color: gray;
+  width: 30%;
+}
+
+header .container .header_gnb ul li {
+  width: 10%;
+  padding: 5px 24% 5px 0;
+  text-align: left;
+}
+
+.header_logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.header_logo p {
+  background-color: gray;
+  width: 100px;
+  height: 100px;
+}
+
+.header_lnb {
+  background-color: gray;
+}
+
+.header_lnb .menu ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header_lnb .menu ul li {
+  display: flex;
+}
+
+/* main */
+.main #bar .container {
+  padding: 0;
+  margin-top: 10px;
+  box-sizing: border-box;
+  background-color: lightgray;
+}
+.main .container .inner_main.visual {
+  height: 200px;
+  margin: 10px auto;
+  background-color: gray;
+  font-size: 50px;
+  text-align: center;
+  line-height: 200px;
+  width: 1070px;
+}
+
+.inner_main.event {
+  background-color: gray;
+  display: flex;
+  height: 500px;
+  margin: 0 10px 10px 10px;
+}
+
+.inner_main.event .event_l {
+  width: 50%;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  margin-right: 10px;
+}
+
+.inner_main.event .event_r {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+
+.inner_main.event .event_r > div {
+  border: 1px solid #000;
+  height: 50%;
+}
+
+.inner_main.event .event_r .event2 {
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.inner_main.product {
+  display: flex;
+  height: 500px;
+  margin: 0 10px 10px 10px;
+  background-color: gray;
+}
+
+.product_l {
+  border: 1px solid #000;
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+
+.product_l > div {
+  height: 50%;
+  display: flex;
+}
+
+.product_l .pro_top ul,
+.product_l .pro_bottom ul {
+  width: 100%;
+}
+
+.pro_top {
+  border-bottom: 10px solid gray;
+}
+
+.green {
+  box-sizing: border-box;
+}
+
+.product_r {
+  border: 1px solid #000;
+  width: 50%;
+}
+
+.product_l ul li {
+  width: 50%;
+  height: 50%;
+}
+
+.pro_top ul:nth-child(1) {
+  border-right: 10px solid green;
+}
+
+.pro_bottom ul:nth-child(1) {
+  border-right: 10px solid green;
+}
+
+.pro_bottom ul {
+  display: flex;
+}
+
+.wide_banner {
+  height: 200px;
+  margin: 10px auto;
+  background-color: lightgray;
+  font-size: 50px;
+  text-align: center;
+  line-height: 200px;
+  font-weight: bold;
+}
+
+.inner_banner {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+}
+
+.inner_banner.best .in_right {
+  margin: 0 10px 10px 0;
+}
+
+.inner_banner.best .top,
+.inner_banner.best .bottom {
+  background-color: gray;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.inner_banner.best ul li {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #000;
+  margin: 0 10px 10px 0;
+  background-color: gray;
+}
+
+.in_right ul li:nth-child(4) {
+  margin-right: 0;
+}
+
+.inner_banner.best .bottom li {
+  margin-bottom: 0;
+}
+
+.inner_banner_in {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+}
+
+.inner_banner_in ul {
+  width: 100%;
+  height: 200px;
+  box-sizing: border-box;
+}
+
+.inner_banner_in ul li {
+  background-color: gray;
+  width: 20%;
+  height: 100%;
+  border: 1px solid #000;
+  box-sizing: border-box;
+}
+
+.in_top {
+  display: flex;
+}
+
+.in_bottom {
+  display: flex;
+}
+
+/* footer */
+footer .container .logo {
+  width: 15%;
+  border: 1px solid #000;
+  height: 150px;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+
+footer .container .copyright {
+  width: 85%;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  height: 150px;
+}

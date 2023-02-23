@@ -1,0 +1,576 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  height: 3000px;
+}
+
+/* popup_box */
+#popup_chk {
+  display: none;
+}
+
+#popup_chk:checked~.popup {
+  display: block;
+}
+
+#popup_chk~.popup {
+  display: none;
+}
+
+.popup {
+  z-index: 9999;
+  /* 9999 절대 밑으로 깔리지 않게 하겠다는 의지의 표현 
+  포지션이 반드시 릴레이티브일 필요는 없어. */
+  width: 300px;
+  height: 300px;
+  background-color: aqua;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  /* position: absolute; 상위에 뭐를 잡은 게 없어. 그러면 body가 position의 기준점이 된다. */
+  /* position: relative; */
+  /* position: absolute; 앱솔루트가 있는데 릴레이티브를 줘야한다. 그러면 밖에 박스를 하나 더 쳐서 걔를 릴레이티브를 줘라. */
+  /* 부지런한 사람이라면 막 마진 패딩 어쩌구 저쩌구 한당. */
+}
+
+.popup p {
+  width: 280px;
+  height: 200px;
+  border: 1px solid red;
+  color: black;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.popup_close {
+  margin-left: 280px;
+  /* margin-top: 10px; 이건 있으나 마나인 듯. */
+  /* padding-right: 20px; 이것도 그렇다면... 어쩌지?*/
+  /* label에 주면 되는 듯 */
+}
+
+.icon_inner label {
+  /* padding-right: 100px; */
+  /* 아닌듯? 포지션을 줘야해. 근데 왜 margin-right는 되는거지? 도무지 알 길이 없지만 주말에 해보자!! */
+}
+
+/* popup_icon */
+#icon_chk {
+  display: none
+}
+
+#icon_chk:checked~.icon {
+  display: block;
+}
+
+#icon_chk~.icon {
+  display: none;
+}
+
+.icon {
+  position: fixed;
+  /* position: fixed;따라 내려옴. */
+  top: 500px;
+  left: 100px;
+  width: 200px;
+  height: 200px;
+  /* border: 1px solid black; */
+  /* animation-name: popup_icon; */
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  /* anomation은 여기선 멈추지 못해. js 가야해. */
+}
+
+@keyframes popup_icon {
+  0% {
+    top: 500px;
+  }
+
+  50% {
+    top: 450px;
+  }
+
+  100% {
+    top: 500px;
+  }
+}
+
+.icon_inner {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.icon .icon_inner div {
+  width: 200px;
+  height: 200px;
+  background-color: blueviolet;
+  border-radius: 100px;
+  text-align: center;
+  line-height: 200px;
+}
+
+.icon label {
+  display: block;
+  width: 10px;
+  height: 20px;
+  /* X가 좀 길쭉해서 너비 높이 똑같이 주면 좀 구림. 그래서 다르게 함. */
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+}
+
+#icon_chk2 {
+  display: none;
+}
+
+#icon_chk2:checked~.icon2 {
+  display: block;
+}
+
+#icon_chk2~.icon2 {
+  display: none;
+}
+
+.icon2 {
+  position: fixed;
+  top: 300px;
+  right: 100px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 300px;
+  background-color: red;
+  /* animation: updown 2s 0.5s both infinite; */
+}
+
+
+@keyframes updown {
+  0% {
+    top: 300px;
+  }
+
+  50% {
+    top: 500px;
+
+  }
+
+  100% {
+    top: 300px;
+  }
+}
+
+.icon2 .icon2_inner {
+  position: relative;
+  /* border: 1px solid black; */
+}
+
+.icon2 .icon2_inner label {
+  position: absolute;
+  width: 20px;
+  right: 0;
+  top: 135px;
+  height: 10px;
+}
+
+
+
+
+
+
+/* lnb_01 */
+.lnb_01,
+.lnb_02,
+.lnb_03,
+.lnb_04,
+.lnb_05 {
+  width: 1000px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.lnb_01 li {
+  width: 200px;
+  height: 50px;
+  float: left;
+  text-align: center;
+  line-height: 50px;
+  background-color: aqua;
+  color: blueviolet;
+  transition: all 0.3s;
+}
+
+.lnb_01 li:hover {
+  background-color: blue;
+  color: aliceblue;
+}
+
+/* lnb_02 */
+.lnb_02 li {
+
+  float: left;
+}
+
+.lnb_02 li a {
+  display: block;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: aliceblue;
+  background-color: blue;
+  transition: all 0.3s;
+}
+
+.lnb_02 li a:hover {
+  background-color: brown;
+  color: yellowgreen;
+}
+
+/* lnb_03 */
+/* z-index는 포지션을 가진 친구들끼리만 적용이 된다. 
+position: relative;를 줘라! absolute는 곤란해. 자기 자리를 고수하며 다른 개체에 영향을 주면 안되니까. */
+.lnb_03 {
+  z-index: 2;
+  position: relative;
+}
+
+.lnb_03 ul {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s;
+}
+
+.lnb_03:hover ul {
+  height: 200px;
+}
+
+.lnb_03 li {
+  float: left;
+  width: 200px;
+  height: 50px;
+}
+
+.lnb_03 a {
+  display: block;
+  width: 200px;
+  height: 50px;
+  background-color: coral;
+  text-align: center;
+  color: darkgreen;
+  line-height: 50px;
+  transition: height 0.3s;
+}
+
+.lnb_03>li>a:hover {
+  background-color: cornflowerblue;
+}
+
+/* lnb_04 */
+.lnb_04 {
+  z-index: 1;
+  position: relative;
+}
+
+.lnb_04 li {
+  float: left;
+  width: 200px;
+  height: 50px;
+}
+
+.lnb_04 a {
+  display: block;
+  width: 200px;
+  height: 50px;
+  background-color: crimson;
+  text-align: center;
+  line-height: 50px;
+  color: rgb(13, 14, 12);
+}
+
+.lnb_04 a:hover {
+  background-color: yellowgreen;
+  color: aliceblue;
+}
+
+.lnb_04 li {}
+
+.lnb_04 li a {}
+
+.lnb_04 li a {}
+
+.lnb_04 li ul {
+  height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.lnb_04 li:hover ul {
+  height: 200px;
+}
+
+.lnb_04 li ul li {}
+
+.lnb_04 li ul li a {}
+
+
+/* lnb_05 */
+.lnb_05 li {
+  float: left;
+  width: 200px;
+  height: 50px;
+}
+
+.lnb_05 li a {
+  display: block;
+  width: 200px;
+  height: 50px;
+  background-color: darkgreen;
+  text-align: center;
+  line-height: 50px;
+}
+
+.lnb_05 li a:hover {
+  background-color: violet;
+  color: brown;
+}
+
+.lnb_05 li ul {
+  height: 0;
+  overflow: hidden;
+  width: 800px;
+}
+
+.lnb_05 li:hover ul {
+  height: 200px;
+  float: left;
+}
+
+/* .lnb_05 ul li a {
+  float: left;
+} */
+
+
+/*lnb_06 */
+#ham_chk {
+  display: none;
+}
+
+/* #ham_chk:checked~.menu_box .menu_list {
+  display: block;
+}
+
+#ham_chk~.menu_box .menu_list {
+  display: none;
+} */
+
+#ham_chk~.menu_box .menu_list {
+  height: 0;
+}
+
+#ham_chk:checked~.menu_box .menu_list {
+  height: 300px;
+}
+
+#ham_chk:checked~.menu_box .lnb_06 .menu_close {
+  display: block;
+}
+
+#ham_chk~.menu_box .lnb_06 .menu_close {
+  display: none;
+}
+
+#ham_chk:checked~.menu_box .lnb_06 .menu_open {
+  display: none;
+}
+
+#ham_chk~.menu_box .lnb_06 .menu_open {
+  display: block;
+}
+
+.menu_box {
+  width: 1050px;
+  margin: 0 auto;
+}
+
+.menu_box .lnb_06 {
+  width: 1050px;
+  height: 50px;
+}
+
+.menu_box .lnb_06 label {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  font-size: 40px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  float: left;
+}
+
+.menu_box .lnb_06 ul {
+  width: 1000px;
+  float: left;
+}
+
+.menu_box .lnb_06 ul li {
+  width: 200px;
+  height: 50px;
+  background-color: black;
+  color: whitesmoke;
+  text-align: center;
+  line-height: 50px;
+  float: left;
+}
+
+.menu_box .menu_list {
+  width: 1050px;
+  height: 200px;
+  overflow: hidden;
+  background-color: #ccc;
+  transition: 0.3s;
+}
+
+#wing_chk {
+  display: none;
+}
+
+#wing_chk:checked~.wing_banner {
+  right: 0;
+}
+
+#wing_chk~.wing_banner {
+  /* display: none; */
+  right: -300px;
+}
+
+#wing_chk:checked~.wing_banner .wing_close {
+  display: block;
+}
+
+#wing_chk:checked~.wing_banner .wing_open {
+  display: none;
+}
+
+#wing_chk~.wing_banner .wing_close {
+  display: none;
+}
+
+#wing_chk~.wing_banner .wing_open {
+  display: block;
+}
+
+.wing_banner {
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+  right: -300px;
+  width: 330px;
+  height: 100vh;
+  /* border: 1px solid black; */
+  transition: 0.3s;
+}
+
+.wing_banner label {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: yellow;
+  float: left;
+  margin-top: 200px;
+}
+
+.wing_banner .wing {
+  width: 300px;
+  height: 100%;
+  background-color: #ccc;
+  float: left;
+}
+
+/* .top_btn 
+용도: 페이지의 상단이 보이지 않을 때 사용하는 것이기 때문에 상단이 스크롤되어서 안 보일 때 보이게 해야해. 그런데 css에서 못해. */
+.top_btn {
+  position: fixed;
+  display: block;
+  width: 50px;
+  height: 50px;
+  bottom: 10px;
+  right: 50%;
+  background-color: red;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+}
+
+
+.top_btn2 {
+  position: fixed;
+  background-color: aquamarine;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  bottom: 20px;
+  right: 200px;
+}
+
+#wing_chk2 {
+  display: none;
+}
+
+#wing_chk2:checked~.wing_inner2 .wing_open2 {
+  display: block;
+}
+
+#wing_chk2~.wing_inner2 .wing_close2 {
+  display: none;
+}
+
+#wing_chk2:checked~.wing_inner2 h2 {
+  right: 0;
+}
+
+
+.wing2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.wing_inner2 {}
+
+.wing_inner2 label {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: green;
+  left: 200px;
+  top: 50px;
+}
+
+.wing_inner2 label.wing_open2 {}
+
+.wing_inner2 label.wing_close2 {}
+
+.wing_inner2 h2 {
+  width: 200px;
+  height: 100vh;
+  background-color: tomato;
+}
