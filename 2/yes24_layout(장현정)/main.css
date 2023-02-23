@@ -1,0 +1,656 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+.content {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+/**************** nav ****************/
+.nav {
+  width: 100%;
+  overflow: hidden;
+}
+
+.nav_left {
+  float: left;
+}
+
+.nav_left ul {}
+
+.nav_left ul li {
+  float: left;
+  padding: 10px;
+}
+
+.nav_left ul .blue a {
+  color: blue;
+}
+
+.nav_left ul li a {
+  font-size: 12px;
+  color: #555;
+}
+
+.nav_left ul li a i {}
+
+.nav_right {
+  float: right;
+}
+
+.nav_right ul {}
+
+.nav_right ul li {
+  float: left;
+  padding: 10px;
+}
+
+/* .nav_right ul li::after {
+  content: "";
+  width: 1px;
+  height: 10px;
+  color: #bd2b2b;
+} */
+
+.nav_right ul li a {
+  font-size: 12px;
+  color: #555;
+}
+
+.nav_right ul li a i {}
+
+/**************** header ****************/
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(115, 164, 238);
+
+}
+
+.header_left {
+  width: 70px;
+  height: 70px;
+  line-height: 50px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+  float: left;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid black;
+  color: white;
+}
+
+.header_right {
+  float: left;
+  width: 900px;
+}
+
+.header_right_top {
+  width: 100%;
+  height: 50%;
+}
+
+.header_right_top ul {}
+
+.header_right_top ul li {
+  float: left;
+  padding: 10px 10px;
+}
+
+.header_right_top ul li.yellow {
+  background-color: yellow;
+  border-radius: 30%;
+}
+
+.header_right_top ul li.yellow a {
+  color: black;
+}
+
+.header_right_top ul li a,
+.header_right_bottom ul li a {
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.header_right_botton {
+  width: 100%;
+  height: 50%;
+}
+
+.header_right_bottom ul {}
+
+.header_right_bottom ul li {
+  float: left;
+  padding: 10px 20px;
+}
+
+.banner {
+  text-align: center;
+  background-color: aqua;
+  height: 200px;
+}
+
+.banner_text {
+  padding: 20px 0;
+}
+
+.banner .content p {
+  font-size: 20px;
+}
+
+.banner p b {
+  color: red;
+}
+
+.banner .content h1 {}
+
+.banner .content h1 b {
+  color: blue;
+}
+
+.banner .sns {
+  padding: 10px 0 30px 0;
+  font-size: 30px;
+}
+
+.container {}
+
+.container .quiz {
+  text-align: center;
+  background-color: pink;
+  padding-bottom: 20px;
+}
+
+.container .quiz_date {
+  color: red;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.container .quiz_q {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0 0 20px 0;
+}
+
+.quiz .vote input {
+  width: 300px;
+  height: 60px;
+  margin: 0 auto 20px;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+}
+
+.quiz_bottom p {
+  text-align: left;
+}
+
+.container .quiz_q input {
+  width: 120px;
+  height: 30px;
+  background-color: black;
+  color: white;
+}
+
+.quiz_check_box {
+  overflow: hidden;
+  margin: 0 auto;
+  width: 660px;
+}
+
+.quiz_check_box div {
+  float: left;
+  margin: 0 10px 30px 0;
+}
+
+.quiz_check_box fieldset {
+  width: 150px;
+  height: 150px;
+}
+
+.quiz_check_box fieldset input {}
+
+.quiz_check_box fieldset input label {}
+
+.quiz_check_box fieldset input label p {
+  font-size: 10px;
+}
+
+.content.gift {
+  margin-bottom: 50px;
+  padding-top: 50px;
+  overflow: hidden;
+}
+
+.content.gift div {
+  width: 100%;
+  height: 300px;
+}
+
+.content.gift .gift_left {
+  width: 50%;
+  float: left;
+}
+
+.content.gift h2 {
+  width: 450px;
+  height: 200px;
+  text-align: right;
+  line-height: 200px;
+  padding: 20px;
+  font-size: 80px;
+  border: 1px solid black;
+}
+
+.content.gift p {
+  text-align: center;
+}
+
+
+.content.gift .gift_right {
+  width: 50%;
+  height: 300px;
+  float: left;
+}
+
+.content.gift .gift_right div div {
+  width: 49%;
+  float: left;
+  height: 150px;
+  padding: 10px 10px 20px 10px;
+}
+
+.content.gift .gift_right div div b {
+  display: block;
+  color: black;
+  text-align: right;
+  font-size: 60px;
+}
+
+.content.gift .gift_right div div:nth-child(1),
+.content.gift .gift_right div div:nth-child(1) {
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+
+.content.gift .gift_right_top {
+  float: left;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.content.gift .gift_right_top div {
+  border-top: 1px solid red;
+  border-bottom: 3px solid blue;
+  box-sizing: border-box;
+  background-color: #ccc;
+  color: red;
+}
+
+.content.gift .gift_right_bottom {
+  float: left;
+  width: 100%;
+  height: 150px;
+}
+
+.content.gift .gift_right_bottom div {
+  border-top: 1px solid red;
+  border-bottom: 3px solid blue;
+  box-sizing: border-box;
+  background-color: #ccc;
+  color: red;
+}
+
+/**************** take ****************/
+.take {
+  background-color: aqua;
+  margin-bottom: 50px;
+  padding-top: 20px;
+}
+
+.take h2 {
+  text-align: center;
+  margin: 20px;
+}
+
+.take div {
+  width: 1024px;
+}
+
+.take .app {
+  width: 1024px;
+  height: 300px;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.take .app .take_left {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+
+.take .app .take_left .take_left_box {
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  color: blue;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 120px;
+  border: 1px solid blue;
+}
+
+
+.take .app .take_left h2 {
+  font-size: 30px;
+}
+
+.take .app .take_left div:last-child {
+  width: 100%;
+}
+
+.take .app .take_left p {
+  margin-left: 80px;
+  text-align: left;
+}
+
+.take .app .take_right {
+  float: left;
+  width: 50%;
+}
+
+.take .app .take_right h2 {
+  width: 450px;
+  height: 250px;
+  border: 1px solid black;
+  font-size: 100px;
+  text-align: right;
+  line-height: 250px;
+  margin: 30px;
+  /* padding-right: 20px; */
+}
+
+
+/* more */
+.take .more {
+  width: 1024px;
+  height: 400px;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.take .more h2 {
+  padding: 20px 0 40px 0;
+}
+
+.take .more h2 b {
+  color: blue;
+}
+
+.take .more div {}
+
+.more div .more_left {
+  margin-top: 20px;
+  width: 50%;
+  height: 100%;
+  float: left;
+
+}
+
+.more div .more_left p {
+  margin-left: 40px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.more div .more_left p i {
+  color: lightgray;
+  font-size: 40px;
+}
+
+.more_left {}
+
+.more div .more_right {
+  width: 50%;
+  height: 100%;
+  float: left;
+
+}
+
+.more div .more_right h2 {
+  width: 400px;
+  height: 150px;
+  border: 1px solid black;
+  font-size: 80px;
+  line-height: 150px;
+  text-align: right;
+}
+
+.more div .more_right p {
+  font-size: 13px;
+  margin-left: 18px;
+  color: gray;
+}
+
+
+.take .ect {
+  width: 1024px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+.take .ect>div {
+  background-color: white;
+  float: left;
+  width: 30%;
+  height: 300px;
+  margin: 10px 5% 10px 0;
+  box-sizing: border-box;
+}
+
+.take .ect>div:nth-child(3) {
+  margin-right: 0;
+}
+
+.take .ect>div:nth-child(6) {
+  margin-right: 0;
+}
+
+.take .ect>div p:first-child {
+  margin: 10px 80px 10px;
+  border: 1px solid black;
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+
+
+.take .ect>div h4 {
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.take .ect>div h5 {
+  border: 1px solid black;
+  width: 200px;
+  height: 80px;
+  font-size: 40px;
+  text-align: right;
+  line-height: 80px;
+  padding-right: 10px;
+  margin: 10px 48px;
+}
+
+.donation {
+  width: 1024px;
+  height: 200px;
+}
+
+.donation .donation_left {
+  width: 50%;
+  height: 200px;
+  float: left;
+}
+
+.donation .donation_left p {
+  font-size: 25px;
+}
+
+.donation .donation_left h2 {
+  font-size: 35px;
+}
+
+.donation .donation_left h3 {
+  font-size: 25px;
+  margin: 20px 0 30px 0;
+}
+
+.donation .donation_left h3 b {
+  color: red;
+}
+
+.donation .donation_right {
+  width: 50%;
+  height: 200px;
+  float: left;
+}
+
+.donation .donation_right p {
+  border: 1px solid black;
+  width: 400px;
+  height: 150px;
+  font-size: 80px;
+  text-align: right;
+  line-height: 150px;
+}
+
+.yellow_ex {
+  background-color: yellow;
+  padding: 50px 0 50px 0;
+  overflow: hidden;
+}
+
+.pay {}
+
+.pay>div {
+  width: 49%;
+  height: 200px;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: green;
+  color: #fff;
+}
+
+.pay>div:nth-child(2),
+.pay>div:nth-child(4),
+.pay>div:nth-child(6) {
+  margin-right: 0;
+}
+
+.pay_top h4 {
+  text-align: center;
+  padding: 10px;
+}
+
+.pay_top>div b {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.pay_bottom {}
+
+.pay_bottom_left {
+  width: 30%;
+  height: 80%;
+  float: left;
+  font-size: 40px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.pay_bottom_right {
+  width: 50%;
+  height: 80%;
+  float: left;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+
+
+.movie {
+  background-color: black;
+}
+
+.movie .content {
+  background-color: brown;
+  width: 1024px;
+  height: 300px;
+}
+
+.movie_left {
+  width: 30%;
+  height: 100%;
+  float: left;
+}
+
+.movie_left p {
+  border: 1px solid blue;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  line-height: 100px;
+  text-align: center;
+  background-color: blue;
+  color: white;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+.movie_right {
+  height: 100%;
+  width: 60%;
+  float: left;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+.movie_right h1 {}
+
+.movie_right h3 {}
+
+.movie_right p {}
+
+.movie_right p b {}
+
+/**************** nav ****************/
+/**************** nav ****************/
+/**************** nav ****************/
+/**************** nav ****************/
+/**************** nav ****************/
+/**************** nav ****************/

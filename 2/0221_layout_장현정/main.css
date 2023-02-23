@@ -1,0 +1,185 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.header {
+  width: 1070px;
+  margin: 0 auto 50px;
+  background-color: #ccc;
+}
+
+.header .header_top {
+  overflow: hidden;
+}
+
+.header .header_top ul {
+  float: right;
+}
+
+.header .header_top ul li {
+  display: inline-block;
+  margin: 10px;
+  font-size: 11px;
+}
+
+.header .logo {
+  width: 100px;
+  height: 100px;
+  background-color: #999;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 100px;
+}
+
+.header .menu {}
+
+.header .menu ul {}
+
+.header .menu ul li {
+  float: left;
+  width: 20%;
+  text-align: center;
+  background-color: cadetblue;
+  color: brown;
+  height: 30px;
+  line-height: 30px;
+}
+
+.header .menu ul li:hover {
+  background-color: crimson;
+  color: blue;
+}
+
+.vasual_main_ex {
+  background-color: #ccc;
+  width: 100%;
+}
+
+.vasual_main_ex .visual_main {
+  width: 1070px;
+  margin: 0 auto;
+  height: 200px;
+  border: 1px solid black;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.event {
+  width: 1070px;
+  height: 420px;
+  margin: 0 auto 50px;
+}
+
+.event div {
+  width: 530px;
+  height: 100%;
+  background-color: #999;
+  float: left;
+  border: 1px solid black;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+
+.event div:last-child {
+  margin-right: 0;
+}
+
+
+.product {
+  width: 1070px;
+  height: 420px;
+  margin: 0 auto 50px;
+
+}
+
+.product_left {
+  float: left;
+  width: 530px;
+  height: 420px;
+  margin-right: 10px;
+}
+
+.product_left div {
+  float: left;
+  width: 260px;
+  height: 210px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  background-color: #999;
+}
+
+.product_right {
+  width: 530px;
+  height: 420px;
+  float: left;
+  border: 1px solid black;
+  box-sizing: border-box;
+  background-color: #999;
+}
+
+
+.wide_banner_ex {
+  background-color: #ccc;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.wide_banner {
+  width: 1070px;
+  height: 300px;
+  margin: 0 auto;
+  line-height: 300px;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.best {
+  width: 1070px;
+  height: 430px;
+  margin: 0 auto;
+  background-color: #ccc;
+}
+
+.best_top,
+.best_bottom {}
+
+.best_top .best_top_left {
+  width: 200px;
+}
+
+.best_top .best_top_right {
+  width: 870px;
+  float: right;
+}
+
+.best_top .best_top_right div {
+  float: left;
+  width: 210px;
+  height: 210px;
+  border: 1px solid black;
+}
+
+.best_top .best_bottom_left {
+  width: 200px;
+}
+
+.best_top .best_bottom_right {
+  width: 870px;
+  float: right;
+}
+
+.best_top .best_bottom_right div {
+  float: left;
+  width: 210px;
+  height: 210px;
+  border: 1px solid black;
+}

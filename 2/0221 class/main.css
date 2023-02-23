@@ -1,0 +1,263 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+/*******************header********************/
+.header {
+  width: 1070px;
+  height: 200px;
+  background-color: #ccc;
+  margin: 0 auto;
+  /* margin: 0 auto; 가운데 정렬이 아니라 양쪽의 margin을 똑같이 주는거야. width를 잡지 않으면 작동하지 않아. */
+}
+
+.header .gnb {
+  overflow: hidden;
+  /* overflow: hidden; 부모의 float이라는 속성이 밖으로 나가지 못하게 막는 것. 
+  햄버거 버튼을 눌렀을 때 밑으로 안 내려옴. 그래서 컨디클 씀. float을 가진 contents는 반드시 부모가 싸야 해. */
+  /* content: "";
+  display: block;
+  clear: both; 
+  가상의 contents를 넣어 
+  마진이 안 먹힘.
+  이도 저도 생각할 필요가 없는 경우! 자식이 너비, 높이를 정확하게 가지고 있는 경우! 오예 */
+}
+
+.header .gnb ul {
+  float: right;
+}
+
+.header .gnb ul li {
+  display: inline-block;
+  /* display: inline-block; 가로일렬로 정렬 시에 이걸 쓰고
+  float는 칸으로 막 독특하게 정렬할 때 쓰는 것을 권장한다고 함. */
+  padding: 0 5px;
+  font-size: 11px;
+  /* font-size: 14px; 기본이 16px 인데 이미지가 크고 글씨가 자잘하면서 심플한 느낌 주려면 14-15px.
+  글자 크기 두께 여백 등을 좀 센스있게 잘 줘봐라. */
+}
+
+.header .gnb ul li:hover {
+  font-weight: bold;
+  /* font-weight: bold; 요래하면 레이아웃이 들썩거리는데 이런건 잘 쓰지 않아. */
+}
+
+.header .logo {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 100px;
+  margin: 0 auto;
+  /* margin: 10px auto; 좌우 auto하면 가운데로 온다. 그러나 가운데 정렬의 속성이라기보다는 양 옆의 공간을 동일하게 한다고 봐야해. */
+}
+
+.header .lnb {}
+
+.header .lnb ul {
+  width: 100%;
+}
+
+.header .lnb ul li {
+  width: 20%;
+  height: 50px;
+  /* width, height 수치가 정확히 들어간 경우 float을 써도 깨짐이 없어서 조치를 취할 필요가 없어.
+  float을 편하게 쓰려면 너비, 높이를 줘라! */
+  text-align: center;
+  line-height: 50px;
+  float: left;
+  background-color: darkgray;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.header .lnb ul li:hover {
+  background-color: aquamarine;
+  color: black;
+}
+
+/*******************visual_main********************/
+.visual_ex {
+  width: 100%;
+  height: 300px;
+  background-color: #ccc;
+  margin: 100px 0;
+}
+
+.visual_ex .visual_main {
+  width: 1070px;
+  height: 300px;
+  border: 1px solid black;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/*******************content_top********************/
+.content_top,
+.content_bottom {
+  width: 1070px;
+  margin: 0 auto;
+}
+
+.event,
+.product {
+  width: 100%;
+  height: 530px;
+  background-color: #ccc;
+  margin-bottom: 50px;
+}
+
+.event .event_sub,
+.product .pro {
+  width: 530px;
+  height: 530px;
+  background-color: #999;
+  float: left;
+}
+
+.event .event_left {
+  margin-right: 10px;
+}
+
+.event .event_right .eve {
+  width: 530px;
+  height: 260px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.event .event_right .event_right_top {
+  margin-bottom: 10px;
+}
+
+/*******************product********************/
+.product .product_left {
+  margin-right: 10px;
+}
+
+.product .pro .pro_sub {
+  width: 530px;
+  height: 260px;
+  background-color: #999;
+  float: left;
+}
+
+.product .pro .pro_sub div {
+  width: 260px;
+  height: 260px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  float: left;
+}
+
+.product .product_top {
+  margin-bottom: 10px;
+}
+
+.product .pro .pro_sub div:nth-child(1) {
+  margin-right: 10px;
+}
+
+/*******************wide_banner********************/
+.wide_banner {
+  width: 100%;
+  height: 300px;
+  background-color: #ccc;
+  margin-bottom: 50px;
+  text-align: center;
+  line-height: 300px;
+}
+
+/*******************best********************/
+.best {
+  width: 100%;
+  height: 410px;
+  background-color: #ccc;
+  margin-bottom: 50px;
+}
+
+.best .best_item {
+  width: 830px;
+  height: 410px;
+  float: right;
+  background-color: ##999;
+}
+
+.best .best_item .best_sub {
+  width: 100%;
+  height: 200px;
+  background-color: ye/llow;
+}
+
+.best .best_item .best_top {
+  margin-bottom: 10px;
+}
+
+.best .best_item .best_sub div {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  float: left;
+  margin-right: 10px;
+}
+
+.best .best_item .best_sub div:last-child {
+  margin-right: 0;
+}
+
+.insta {
+  width: 100%;
+  height: 428px;
+  background-color: #ccc;
+}
+
+.insta li {
+  width: 214px;
+  height: 214px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  float: left;
+}
+
+/*******************footer_ex********************/
+.footer_ex {
+  width: 100%;
+  height: 214px;
+  background-color: #ccc;
+  margin-top: 50px;
+}
+
+.footer {
+  width: 1070px;
+  height: 214px;
+  background-color: #999;
+  margin: 0 auto;
+}
+
+.footer .footer_logo {
+  width: 214px;
+  height: 214px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin-right: 10px;
+  float: left;
+}
+
+.footer .copy {
+  border: 1px solid black;
+  box-sizing: border-box;
+  width: calc(100% - (214px + 10px));
+  /* width: calc(100% - (214px + 10px));
+  정말 유용해!! 우선순위를 주어야 하는 계산의 경우 괄호 안에 묶어주어야 한다. 그 점을 유의하면 완전 짱. */
+  height: 214px;
+  float: left;
+}
