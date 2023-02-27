@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* title_box */
+.title_box {
+  /* width: 100%;height: 50px; 생략가능 */
+  overflow: hidden;
+  /* 너비, 높이를 주거나 오버플로우 히든을 주거나 둘 중 하나를 해도 됨. */
+}
+
+.title_box .title_bar {
+  width: 350px;
+  height: 50px;
+  float: left;
+  line-height: 50px;
+}
+
+.title_box .title_txt {
+  width: 300px;
+  height: 50px;
+  float: left;
+  line-height: 50px;
+  text-align: center;
+}
+
+.title_box .title_bar img {
+  display: block;
+  width: 350px;
+  height: auto;
+}
+
+/* header */
+.header_outer {
+  width: 100%;
+}
+
+.gnb_outer {
+  width: 100%;
+  height: 20px;
+  background-color: black;
+}
+
+.gnb {
+  width: 1000px;
+  height: 20px;
+  margin: 0 auto;
+}
+
+.gnb ul {
+  float: right;
+  width: 300px;
+  height: 20px;
+  font-size: 0;
+  padding: 5px;
+  /* font-size: 0;
+  padding: 5px; */
+}
+
+.gnb ul li {
+  color: white;
+  display: inline-block;
+  font-size: 11px;
+  border-right: 1px solid white;
+  padding: 0 10px;
+  line-height: 9px;
+  /* font-size: 11px;
+  border-right: 1px solid white;
+  padding: 0 10px;
+  line-height: 9px; */
+  /* line-height: 9px; 보더의 높이를 조절하기 위해서 이렇게 하고 글자가 이 높이를 벗어나면 글자보다는 짧지만 적절히 예쁜 높이의 선이 됨. */
+}
+
+.gnb ul li:last-child {
+  border: none;
+}
+
+/* 바 사이의 여백을 없애는 실질적인 방법은 유엘에 폰트사이즈 0을 준다. */
+
+/* 얘네를 통해서 bar를 만들어. 진짜 짱이다. 
+
+ .gnb ul {
+  font-size: 0;
+  padding: 5px;
+}
+.gnb ul li {
+  font-size: 11px;
+  border-right: 1px solid white;
+  padding: 0 10px;
+  line-height: 9px;
+} */
+
+.logo {
+  width: 300px;
+  height: 84px;
+  margin: 0 auto;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+  /* width: 100%;
+  height: auto; 이렇게 해서 로고가 박스에 꽉 찬다. */
+  display: block;
+  /* display: block;이미지 사이즈랑 상위 로고 사이즈랑 똑같이 해도 뭐가 빈 공간이 있다! 하면 디스플레이 블록을 주면 된다. */
+}
+
+.header {
+  /* header은 알아서 하삼 */
+  width: 1000px;
+  height: 30px;
+  margin: 0 auto;
+}
+
+.header .lnb {
+  width: 600px;
+  height: 50px;
+  float: left;
+}
+
+.header .lnb ul li {
+  width: 100px;
+  float: left;
+}
+
+.header .brand {
+  width: 300px;
+  height: 50px;
+  float: left;
+}
+
+.header .brand ul li {
+  width: 150px;
+  height: 50px;
+  float: left;
+}
+
+.header .search {
+  width: 100px;
+  height: 50px;
+  float: left;
+}
+
+/* visual_main */
+.visual_main {
+  width: 1000px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.visual_main img {
+  width: 100%;
+  height: 100%;
+  /* 박스사이즈와 이미지 사이즈가 다르면 이렇게 해줘야 이미지 왜곡이 일어나지 않아. */
+}
+
+/* rolling_banner */
+.rolling_banner {
+  width: 100%;
+  min-width: 1000px;
+  /* min-width: 1000px;보다 작으면 사이트가 그 너비로 반응하는 것이 의미가 없기 때문에 최소너비를 1000px로 준다.*/
+}
+
+.rolling_banner img {
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
+/* wrap */
+.wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.event_box {
+  overflow: hidden;
+  padding: 0 25px;
+  margin-bottom: 50px;
+}
+
+.event_box .event {
+  width: 300px;
+  float: left;
+  margin-right: 25px;
+}
+
+.event .event:last-child {
+  margin-right: 0;
+  /* padding-right: 0; */
+}
+
+.best_box {
+  overflow: hidden;
+  padding: 0 25px;
+  margin-bottom: 50px;
+}
+
+.best_box .best {
+  width: 150px;
+  float: left;
+  margin-right: 50px;
+}
+
+.best_box .best.best:last-child {
+  margin-right: 0;
+}
+
+.best_box .best_txt {
+  height: 70px;
+  /* height: 70px; 버튼 위치를 잡아주기 위해서 높이를 잡아주는 것이다. */
+  text-align: center;font-size: 14px;
+}
+
+.best_box button{
+  display: block;
+  width: 100%;height: 30px;
+}
