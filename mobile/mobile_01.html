@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.5, minimum-scale=1.0, user-scalable=no">
+  <!-- maximum-scale=1.5로 하면 내가 만든 것보다 2.0으로 어쩌고, 
+  user-scalable=no 유저가 내가 지정한 것을 함부로 변경하지 못하게. 이런거 생략해도 되는데 모바일에서 무한확대 무한축소되면 어쩌구저쩌구라서 해주면 죠아. -->
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body,
+    html {
+      height: 100%;
+    }
+
+    /* 페이지 전체 제어는 body, html로 잡아준다.  */
+    /* .wrap {
+          width: 100%;
+          height: 100%;
+          background-color: black;
+          color: white;
+        } */
+    body {
+      background-image: url(./images/bg_mobile2.jpg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    full-page-screen
+  </div>
+  <!--wrap-->
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=no">
+  <title>Mobile</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    #gnb_chk {
+      display: none;
+    }
+
+    #gnb_chk:checked~.gnb {
+      display: block;
+    }
+
+    #gnb_chk~.gnb {
+      display: none;
+    }
+
+    .header {
+      width: 100%;
+      height: 45px;
+      background-image: url(./images_mobile/header_bg.png);
+      position: relative;
+    }
+
+    .header .home {
+      width: 62px;
+      height: 32px;
+      background-image: url(./images_mobile/left_btn.png);
+      position: absolute;
+      top: 7px;
+      left: 7px;
+      text-indent: -9999px;
+      /* text-indent: -9999px; home, gnb라는 글자를 지워버리면 공간이 비니까 문제가 생겨. 그래서 이렇게 들여넣기를 하면 괜찮다. 프레임 안으로 들어오지 않는 쪽으로 해서 밖으로 내보내는 것이다. 다음에 또 쓸지도 모르자너!! */
+    }
+
+    .header h1 {
+      text-align: center;
+      line-height: 45px;
+      color: white;
+    }
+
+    .header .gnb_btn {
+      width: 32px;
+      height: 32px;
+      background-image: url(./images_mobile/right_btn.png);
+      top: 7px;
+      right: 7px;
+      position: absolute;
+      text-indent: -9999px;
+    }
+
+    /* 오늘의 과제
+     메뉴 1. 클릭하면 보였다 안 보였다, 2. 옆에서 들어오게 */
+
+    .footer {
+      width: 100%;
+      height: 45px;
+      background-color: black;
+      color: white;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <input type="checkbox" id="gnb_chk">
+  <header class="header">
+    <div class="home">Home</div>
+    <h1>Mobile</h1>
+    <label for="gnb_chk" class="gnb_btn">gnb</label>
+  </header>
+  <ul class="gnb">
+    <li>gnb01</li>
+    <li>gnb02</li>
+    <li>gnb03</li>
+    <li>gnb04</li>
+    <li>gnb05</li>
+  </ul>
+  <ul class="lnb">
+    <li>lnb01</li>
+    <li>lnb02</li>
+    <li>lnb03</li>
+    <li>lnb04</li>
+    <li>lnb05</li>
+  </ul>
+
+  <footer class="footer">
+    copyright
+  </footer>
+</body>
+
+</html>

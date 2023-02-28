@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=1.0">
+  <title>Mobile</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    #gnb_chk {
+      display: none;
+    }
+
+    #gnb_chk:checked~.menu .gnb {
+      display: block;animation: left 0.5s both;
+    }
+
+    @keyframes left {
+      0% {
+        right: -100%;
+      }
+
+      100% {
+        right: 0;
+      }
+    }
+/* 들어갈 때 애니메이션 주는 방법을 모르겠어요ㅠ 
+그리고 버튼을 누르면 로딩될 때 창 아래에 가로 스크롤바가 생기는데 왜 그런지 모르겠어요. */
+
+    #gnb_chk~.menu .gnb {
+      display: none;
+    }
+
+  
+
+    .haeder {
+      /* width: 100%; */
+      height: 45px;
+      background-image: url(./images_mobile/header_bg.png);
+    }
+
+    .haeder .home {
+      width: 62px;
+      height: 32px;
+      background-image: url(./images_mobile/left_btn.png);
+      position: absolute;
+      top: 7px;
+      left: 7px;
+      text-indent: -9999px;
+    }
+
+    .haeder h1 {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    .haeder .gnb_btn {
+      width: 32px;
+      height: 32px;
+      background-image: url(./images_mobile/right_btn.png);
+      position: absolute;
+      right: 7px;
+      top: 7px;
+      text-indent: -9999px;
+    }
+
+    .menu {
+      position: relative;
+    }
+
+    .lnb {}
+
+    .lnb li {
+      width: 20%;
+      height: 30px;
+      line-height: 30px;
+      float: left;
+      text-align: center;
+      box-sizing: border-box;
+      border: 1px solid black;
+      background-color: lightcoral;
+    }
+
+    .gnb {
+      position: absolute;
+      right: 0;
+      background-color: burlywood;
+    }
+
+
+
+
+    .gnb li {
+      width: 100px;
+      height: 25px;
+      border: 1px solid black;
+      text-align: center;
+      line-height: 25px;
+      z-index: 9999;
+    }
+
+    footer.footer {
+      background-color: black;
+      color: white;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 45px;
+      line-height: 45px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <input type="checkbox" id="gnb_chk">
+  <header class="haeder">
+    <div class="home">home</div>
+    <h1>Mobile</h1>
+    <label for="gnb_chk" class="gnb_btn">gnb</label>
+  </header>
+  <div class="menu">
+    <ul class="lnb">
+      <li>lnb01</li>
+      <li>lnb02</li>
+      <li>lnb03</li>
+      <li>lnb04</li>
+      <li>lnb05</li>
+    </ul>
+    <ul class="gnb">
+      <li>gnb01</li>
+      <li>gnb02</li>
+      <li>gnb03</li>
+      <li>gnb04</li>
+      <li>gnb05</li>
+    </ul>
+  </div>
+
+  <footer class="footer">
+    copyright
+  </footer>
+</body>
+
+</html>
