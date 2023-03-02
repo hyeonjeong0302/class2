@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.5, minimum-scale=1.0, user-scalable=no">
+
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .box {
+      width: 100%;
+      height: 200px;
+    }
+
+    .box01 {
+      background-color: yellow;
+    }
+
+    .box02 {
+      background-color: red;
+    }
+
+    /* screed, print, all, only 
+all을 쓰는 것이 트렌드이지만 여기선 이것저것 해보자. */
+    @media only screen and (min-width:321px) and (orientation: landscape) {
+
+      /* 321을 한 것은 세로로 하면 320이니까 가로로 하면 적어도 그건 넘겠지? 이런 의미다. */
+      .boxA {
+        overflow: hidden;
+      }
+
+      .boxA .box {
+        width: 50%;
+        float: left;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 큰 디바이스 기준으로 만들어 놓아야 한다. -->
+  <section class="boxA">
+    <div class="box01 box">box01</div>
+    <div class="box02 box">box02</div>
+  </section>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  width: 100%;
+}
+
+/* subpage */
+/* product */
+.sub_page .product {
+  width: 1070px;
+  height: auto;
+  margin: 0 auto 50px;
+  border-bottom: 1px solid lightgray;
+  box-sizing: border-box;
+}
+
+.sub_page .product h2 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+.sub_page .product div {
+  overflow: hidden;
+}
+
+.sub_page .product > div > div {
+  width: 350px;
+  height: auto;
+  float: left;
+  margin-right: 10px;
+  border: 1px solid lightgray;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.sub_page .product div div:last-child {
+  margin-right: 0;
+}
+
+.sub_page .product div img {
+  width: 350px;
+  height: 350px;
+}
+
+.sub_page .product div div span {
+  display: inline-block;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  color: gray;
+  font-size: 12px;
+  padding: 1px 3px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+
+.sub_page .product div h4 {
+}
+
+.sub_page .product div h5 b {
+  color: gray;
+  text-decoration-line: line-through;
+  font-size: 11px;
+}
+
+.sub_page .product div h5 {
+  color: deepskyblue;
+}
+
+.sub_page .product > div > div > div {
+  margin: 10px;
+}
+
+.sub_page .page {
+  width: 110px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+.sub_page .page span {
+  width: 110px;
+  margin: 0 auto;
+}
+
+.sub_page .page span i {
+  display: block;
+  float: left;
+  border: 1px solid lightgray;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  margin: 2px;
+  text-align: center;
+  font-size: 11px;
+  background-color: lightgray;
+}
+
+.sub_page .page span p {
+  display: block;
+  float: left;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  margin: 2px;
+  text-align: center;
+  font-size: 11px;
+  background-color: lightgray;
+  text-align: center;
+  font-size: 11px;
+  border: 1px solid deepskyblue;
+}

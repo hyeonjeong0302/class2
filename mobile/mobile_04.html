@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.5, minimum-scale=1.0, user-scalable=no">
+
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    img {
+      display: block;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    /* header */
+    .header {}
+
+    .header h1 {
+      background-color: blanchedalmond;
+      color: blueviolet;
+      text-align: center;
+    }
+
+    /* lnb */
+    .lnb {
+      overflow: hidden;
+    }
+
+    .lnb li {
+      width: 20%;
+      height: 30px;
+      /* height: 30px;  높이는 %로 잡는 것은 어려워. 그래서 요즘 트렌드는 높이는 생략 */
+      background-color: #ccc;
+      line-height: 30px;
+      text-align: center;
+      float: left;
+    }
+
+    /* visual_main */
+    .visual_main {}
+
+    .visual_main img {
+      width: 100%;
+    }
+
+    /* contents */
+    .event {
+      margin: 10px 0;
+      overflow: hidden;
+    }
+
+    .event div {
+      width: 49%;
+      overflow: hidden;
+      float: left;
+    }
+
+    .event div:first-child {
+      margin-right: 2%;
+    }
+
+    .event div img {
+      width: 100%;
+    }
+
+    .news {
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+
+    .news .news_img {
+      width: 100px;
+      height: 100px;
+      float: left;
+      margin-right: 2%;
+    }
+
+    .news .news_img img {
+      width: 100%;
+    }
+
+    .news .news_txt {
+      width: calc(100% - 100px - 2%);
+      height: 100px;
+      border: 1px solid brown;
+      box-sizing: border-box;
+      float: left;
+    }
+
+    .footer {
+      height: 30px;
+      background-color: black;
+      color: white;
+      line-height: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <h1>header</h1>
+  </header>
+  <ul class="lnb">
+    <li>lnb01</li>
+    <li>lnb02</li>
+    <li>lnb03</li>
+    <li>lnb04</li>
+    <li>lnb05</li>
+  </ul>
+
+  <div class="visual_main">
+    <img src="./images/autumn.jpg" alt="autumn">
+  </div>
+  <section class="event">
+    <div>
+      <img src="./images/rose.jpg" alt="rose">
+    </div>
+    <div>
+      <img src="./images/walk.jpg" alt="walk">
+    </div>
+  </section>
+
+  <section class="news">
+    <div class="news_img">
+      <img src="./images/leaf.avif" alt="leaf">
+    </div>
+    <p class="news_txt">news_text</p>
+  </section>
+
+  <footer class="footer">Copyright</footer>
+</body>
+
+</html>
