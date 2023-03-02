@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* header */
+#gnb_chk,
+#search_chk {
+  display: none;
+}
+
+#search_chk:checked~.search_box {
+  display: none;
+}
+
+#search_chk~.search_box {
+  display: block;
+}
+
+.header {}
+
+.header .gnb {
+  background-color: brown;
+  overflow: hidden;
+  color: white;
+}
+
+.header .ham {
+  text-align: center;
+  line-height: 50px;
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+
+.header .logo {
+  float: left;
+  width: 312px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+}
+
+.header .search {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  float: right;
+  line-height: 50px;
+}
+
+.lnb {
+  background-color: brown;
+  overflow: hidden;
+}
+
+.lnb ul {}
+
+.lnb ul li a {
+  width: 25%;
+  float: left;
+  text-align: center;
+  line-height: 50px;
+  color: gray;
+}
+
+.lnb ul li:hover a {
+  color: white;
+}
+
+.talk {}
+
+.talk div .profile {
+  width: 80px;
+  height: 80px;
+  float: left;
+  text-align: center;
+  line-height: 80px;
+}
+
+.talk div .profile img {
+  width: 40px;
+  height: 40px;
+}
+
+.talk div .talk_detail {
+  width: 240px;
+  height: 50px;
+  float: left;
+}
+
+.talk div .time {
+  width: 80px;
+  height: 50px;
+  float: left;
+}
