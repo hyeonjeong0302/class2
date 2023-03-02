@@ -18,15 +18,16 @@ a {
   display: none;
 }
 
-#search_chk:checked~.search_box {
+#search_chk:checked ~ .search_box {
   display: none;
 }
 
-#search_chk~.search_box {
+#search_chk ~ .search_box {
   display: block;
 }
 
-.header {}
+.header {
+}
 
 .header .gnb {
   background-color: brown;
@@ -63,7 +64,8 @@ a {
   overflow: hidden;
 }
 
-.lnb ul {}
+.lnb ul {
+}
 
 .lnb ul li a {
   width: 25%;
@@ -77,8 +79,13 @@ a {
   color: white;
 }
 
-.talk {}
-
+.talk > div {
+  overflow: hidden;
+  padding-top: 20px;
+}
+.talk > div > div:nth-child(2) {
+  border-bottom: 1px solid lightgray;
+}
 .talk div .profile {
   width: 80px;
   height: 80px;
@@ -93,13 +100,13 @@ a {
 }
 
 .talk div .talk_detail {
-  width: 240px;
-  height: 50px;
+  width: calc(100% - 80px - 80px);
+  height: 80px;
   float: left;
 }
 
 .talk div .time {
   width: 80px;
-  height: 50px;
+  height: 80px;
   float: left;
 }
