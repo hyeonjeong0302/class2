@@ -1,0 +1,17 @@
+1. 칼럼: 92px(width: 1104px), 거터: 15px(165px) -> 총 width: 1269px
+2. 폰트 플랜
+1) 콘셉트 폰트
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Dokdo&family=Emilys+Candy&family=Fredoka+One&family=Shantell+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Simonetta:ital,wght@0,400;0,900;1,400;1,900&display=swap');
+
+font-family: 'Caveat Brush', cursive;
+font-family: 'Dokdo', cursive;
+font-family: 'Emilys Candy', cursive;
+font-family: 'Fredoka One', cursive;
+font-family: 'Shantell Sans', cursive;
+font-family: 'Simonetta', cursive;
+
+2) 기본 글꼴 : 굴림
+3. 컬러 플랜
+1) 메인 컬러: R(156), G(133), U(91)
+2) 서브 컬러: R(150), G(199), U(176)
+4. GUI: 아이콘들을 귀여운 여우 그림으로 하고 hover 하면 좌우로 까딱까딱하게 만든다. 너무 빠르게 아니고 자동차 흔들 인형 정도의 느린 속도
