@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+  <script>
+    document.write('Hello, ' + '<font color="red">' + 'JavaScript!' + '</font>');
+    // document가 객체, document에다가 write해라! ;는 생략 가능 그러나 다 찍어. 생략이 안 되는 부분도 있기 때문에 우린 잘 모르니까 다 찍자.
+    /*여러줄 주석*/
+    //한 줄 주석 
+    document.write(1+1);
+    // 이 연산에서 얻은 결과를 어딘가에 활용하고 싶으면 그 데이터가 어딘가에 저장이 되어 있어야 가능한데 그러면 앞에 a=1+1 이렇게 하면 된다. 자바스크립트에서 =은 대입하다의 의미야. 나중에 a를 쓰면 1+1의 값을 사용할 수 있는 것이다. 그런데 내 하드디스크 용량 너무 크니까 어디있는지 주소가 있어야 찾기 쉬워. 그 주소를 우리가 알 수 있는 형태로 표현된 것을 '값을 저장하는 식별자'라고 하고 그걸 '변수'라고 한다.
+    // 반드시 a=2다 이런 식으로 선언을 하고 사용해야 해. 선언 앞에는 let(값이 변해도 되는 변수를 저장할 때.), const(절대 변경되어서는 안 되는 고유값을 선언할 때), var(var은 잘 안 씀) 등의 키워드를 써줘야 한다. 키워드는 변수를 선언할 때 한 번만 써주면 된다.
+    // 변수 선언 규칙 -영문자, 특수문자(_) 사용, 그런데 특수문자는 쓰지 말장. -키워드 사용하면 안 된다. -숫자로 시작하면 안 됨. - 공백문자 포함할 수 없음. 
+    // 클래스 이름은 대문자로 시작(우리가 아는 그 클래스 아냐. 이건 제이에스에서의 클래스야.). -변수, 함수, 속성, 메소드의 이름은 항상 소문자로 시작. - 여러 단어로 되었을 경우 각 단어의 첫 글자는 대문자로 시작(camel표기법, 규칙이라기보다는 묵시적인 약속). 클래스 이름은 sum_korea라 쓰는데 그걸 선언할 때는 sumKorea 이런 식으로 변수의 이름을 소문자로 쓰고 클래스 이름을 대문자로 쓴다. 읽으려고 노력하지 않아도 그냥 눈에 들어오는 코드가 잘 짜여진 코드다. sumKorea이 sumkorea보다 눈에 잘 들어옴.
+    // 불린형, 0을 제외한 모든 숫자, 문자는 true! 때문에 if(state) 이 말도 true
+    // 언디파인드 - 사용할 수 없는 것을 사용할 때 나타나는 것(?) 헤헤 멍때림
+    // null - 변수의 값을 초기화하고자 할 때 사용하는 특수한 값
+    
+    // alert('Hello, JavaScript~')
+    // 알림창을 띄워주는 것
+ /*let userId = prompt('아이디를 입력하세요', 'green2023');
+alert(userId);*/
+let input = confirm('계속 진행하시겠습니까?');
+// 내가 확인을 누르면 if절은 true, 취소를 누르면 if절은 false
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
